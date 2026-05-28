@@ -1,6 +1,6 @@
-class Header {
-  constructor() {
-    this.header = `
+export function renderHeader() {
+  const header = document.querySelector("#header");
+  header.innerHTML = `
 <header>
       <div class="container d-flex justify-content-between align-items-center">
         <h1 class="logo">
@@ -29,7 +29,4 @@ class Header {
       </div>
     </header>
     `;
-  }
 }
-
-export default Header;

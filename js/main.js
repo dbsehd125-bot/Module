@@ -1,10 +1,16 @@
+import { renderHeader } from "./module/header.js";
+import { renderFooter } from "./module/footer.js";
+
+renderHeader();
+renderFooter();
+
 /* 
 window에 스크롤이 생기면 할일
   그 스크롤양이 0보다 크면 body에 active 추가
   0이면 active 제거
 */
 // const body = document.body;
-const header = document.querySelector("body > header");
+const header = document.querySelector("header");
 
 window.addEventListener("scroll", () => {
   if (window.scrollY > 0) {
